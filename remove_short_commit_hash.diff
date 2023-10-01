@@ -1,0 +1,31 @@
+diff --git a/Aaru/Aaru.csproj b/Aaru/Aaru.csproj
+index b52f8109d..76be2f6f2 100644
+--- a/Aaru/Aaru.csproj
++++ b/Aaru/Aaru.csproj
+@@ -23,11 +23,13 @@
+     <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+     <IsPackable>false</IsPackable>
+   </PropertyGroup>
++<!--
+   <PropertyGroup>
+     <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>false</NrtShowRevision>
+   </PropertyGroup>
++-->
+   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+     <DebugPackage>-dbg</DebugPackage>
+     <NoWarn>CS1591;CS1574</NoWarn>
+@@ -106,10 +108,12 @@
+     <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0-rc.1.23419.4" />
+     <PackageReference Include="System.Text.Json" Version="8.0.0-rc.1.23419.4" />
+     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
++<!--
+     <PackageReference Include="Unclassified.NetRevisionTask" Version="0.4.3">
+       <PrivateAssets>all</PrivateAssets>
+       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+     </PackageReference>
++-->
+     <PackageReference Include="System.Collections" Version="4.3.0" />
+     <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+     <PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
