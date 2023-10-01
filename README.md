@@ -4,8 +4,9 @@ You should be able to build it by running `nix build "https://github.com/Whovian
 
 [aaru](https://github.com/aaru-dps/aaru) is licensed under the GNU General Public License, Version 3.
 
-Note from aaru v6.0.0 Alpha 9:
+Warning about aaru v6.0.0 Alpha 9 from the developer on its [official pre-release page.](https://github.com/aaru-dps/Aaru/releases/tag/v6.0.0-alpha9)
 > WARNING THIS IS A PRE-RELEASE
+> 
 > Images created with this version are not guaranteed to work, be repairable, or contain correct information.
 
 Notes:
