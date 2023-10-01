@@ -4,6 +4,10 @@ You should be able to build it by running `nix build "https://github.com/Whovian
 
 [aaru](https://github.com/aaru-dps/aaru) is licensed under the GNU General Public License, Version 3.
 
+Note from aaru v6.0.0 Alpha 9:
+> WARNING THIS IS A PRE-RELEASE
+> Images created with this version are not guaranteed to work, be repairable, or contain correct information.
+
 Notes:
 - I have not been able to test this on a system that isn't `x86_64-linux`, so I have it hardcoded in the flake. 
 - The version number that you see when running `aaru --version` will just show `6.0.0-alpha9`, when it normally shows `6.0.0-alpha9-XXXXXXXX` where `XXXXXXXX` is a short `git` commit hash. For this derivation, I disabled the commit hash portiion of the version number by suggestion of the main developer.
