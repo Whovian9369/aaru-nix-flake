@@ -1,10 +1,10 @@
-# Whovian's aaru nix flake
-I wanted to make a nix flake for [aaru](https://github.com/aaru-dps/aaru) to use it in my NixOS environment, and also gave me an oppourtunity to play with flakes on a "simpler" project. This is my first flake, so please let me know if you see ways that I can improve.
+# Whovian's Aaru nix flake
+I wanted to make a nix flake for [Aaru](https://github.com/aaru-dps/Aaru) to use it in my NixOS environment, and also gave me an oppourtunity to play with flakes on a "simpler" project. This is my first flake, so please let me know if you see ways that I can improve.
 You should be able to build it by running `nix build "https://github.com/Whovian9369/aaru-nix-flake.git"#aaru`.
 
-[aaru](https://github.com/aaru-dps/aaru) is licensed under the GNU General Public License, Version 3.
+[Aaru](https://github.com/aaru-dps/Aaru) is licensed under the GNU General Public License, Version 3.
 
-Warning about aaru v6.0.0 Alpha 9 from the developer on its [official pre-release page.](https://github.com/aaru-dps/Aaru/releases/tag/v6.0.0-alpha9)
+Warning about Aaru v6.0.0 Alpha 9 from the developer on its [official pre-release page.](https://github.com/aaru-dps/Aaru/releases/tag/v6.0.0-alpha9)
 > WARNING THIS IS A PRE-RELEASE
 > 
 > Images created with this version are not guaranteed to work, be repairable, or contain correct information.
