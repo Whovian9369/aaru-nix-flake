@@ -6,13 +6,13 @@
 }:
 
 buildDotnetModule {
-  pname = "aaru";
+  pname = "Aaru";
   version = "6.0.0-alpha9";
   # version used is "v6.0.0-alpha9"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
-    repo = "aaru";
+    repo = "Aaru";
     rev = "89ae5e8d8b7aa47ca1e2573cf13ed37df5f34e8f";
     hash = "sha256-cYvkCG7mc30RxHMeNvUvUov8ubtNmR4d6F2UkJmfHx0=";
     fetchSubmodules = true;
