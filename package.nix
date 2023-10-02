@@ -23,6 +23,7 @@ buildDotnetModule {
   dotnet-runtime = dotnetCorePackages.runtime_7_0;
   nugetDeps = ./deps.nix;
   projectFile = "Aaru/Aaru.csproj";
+  selfContainedBuild = false;
   patches = [ ./remove_short_commit_hash.diff ];
 
   meta = {
