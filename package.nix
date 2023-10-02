@@ -22,7 +22,7 @@ buildDotnetModule {
   dotnet-sdk = dotnetCorePackages.sdk_7_0;
   dotnet-runtime = dotnetCorePackages.runtime_7_0;
   nugetDeps = ./deps.nix;
-  projectFile = "Aaru.sln";
+  projectFile = "Aaru/Aaru.csproj";
   patches = [ ./remove_short_commit_hash.diff ];
 
   meta = {
