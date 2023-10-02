@@ -1,6 +1,6 @@
 # Whovian's Aaru nix flake
 I wanted to make a nix flake for [Aaru](https://github.com/aaru-dps/Aaru) to use it in my NixOS environment, and also gave me an oppourtunity to play with flakes on a "simpler" project. This is my first flake, so please let me know if you see ways that I can improve.
-You should be able to build it by running `nix build "git+https://github.com/Whovian9369/aaru-nix-flake.git"`.
+You should be able to build it by running `nix build github:Whovian9369/aaru-nix-flake`.
 
 [Aaru](https://github.com/aaru-dps/Aaru) is licensed under the GNU General Public License, Version 3.
 
