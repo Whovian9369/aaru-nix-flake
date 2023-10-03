@@ -7,7 +7,8 @@
   };
 
   outputs = { self, nixpkgs }: {
-    packages.x86_64-linux.default = self.packages.x86_64-linux.aaru;
-    packages.x86_64-linux.aaru = nixpkgs.legacyPackages.x86_64-linux.callPackage ./package.nix {};
+    packages.x86_64-linux.default = self.packages.x86_64-linux.lts;
+    packages.x86_64-linux.lts = nixpkgs.legacyPackages.x86_64-linux.callPackage ./lts.nix {};
+    packages.x86_64-linux.prerelease = nixpkgs.legacyPackages.x86_64-linux.callPackage ./prerelease.nix {};
   };
 }
