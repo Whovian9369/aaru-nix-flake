@@ -8,7 +8,7 @@
 buildDotnetModule {
   pname = "Aaru";
   version = "6.0.0-alpha9";
-  # version used is "v6.0.0-alpha9"
+  # actual version used is "v6.0.0-alpha9"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
