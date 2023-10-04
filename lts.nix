@@ -7,8 +7,8 @@
 
 buildDotnetModule {
   pname = "Aaru";
-  version = "6.0.0-alpha9";
-  # version used is "v6.0.0-alpha9"
+  version = "5.3.2";
+  # actual version used is "v6.0.0-alpha9"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
@@ -28,7 +28,7 @@ buildDotnetModule {
 
   meta = {
     homepage = "https://aaru.app";
-    description = "The Pre-Release of a fully-featured media dump management solution";
+    description = "The LTS version of a fully-featured media dump management solution";
     license = [ lib.licenses.gpl3Only ];
     mainProgram = "aaru";
     maintainers = [ lib.maintainers.whovian9369 ];
