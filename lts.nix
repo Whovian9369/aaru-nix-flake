@@ -24,7 +24,7 @@ buildDotnetModule {
   nugetDeps = ./deps_lts.nix;
   projectFile = "Aaru/Aaru.csproj";
   selfContainedBuild = false;
-  patches = [ ./remove_short_commit_hash.diff ];
+  # patches = [ ./remove_short_commit_hash.diff ];
 
   meta = {
     homepage = "https://aaru.app";
