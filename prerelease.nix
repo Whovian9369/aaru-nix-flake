@@ -24,7 +24,19 @@ buildDotnetModule {
   nugetDeps = ./deps_prerelease.nix;
   projectFile = "Aaru/Aaru.csproj";
   selfContainedBuild = false;
-  patches = [ ./remove_short_commit_hash.diff ];
+
+  patchPhase = ''
+    substituteInPlace "Aaru/Aaru.csproj" "Aaru.Archives/Aaru.Archives.csproj" \
+      "Aaru.Compression/Aaru.Compression.csproj" "Aaru.Core/Aaru.Core.csproj" \
+      "Aaru.Database/Aaru.Database.csproj" "Aaru.Devices/Aaru.Devices.csproj" \
+      "Aaru.Filesystems/Aaru.Filesystems.csproj" \
+      "Aaru.Filters/Aaru.Filters.csproj" "Aaru.Gui/Aaru.Gui.csproj" \
+      "Aaru.Images/Aaru.Images.csproj" \
+      "Aaru.Partitions/Aaru.Partitions.csproj" \
+      "Aaru.Settings/Aaru.Settings.csproj" \
+      "Aaru.Tests.Devices/Aaru.Tests.Devices.csproj" --replace '{chash:8}' \
+      "89ae5e8d"
+  '';
 
   meta = {
     homepage = "https://aaru.app";
