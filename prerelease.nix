@@ -5,6 +5,10 @@
   fetchFromGitHub,
 }:
 
+let
+  inherit (builtins) substring;
+  githash = "89ae5e8d8b7aa47ca1e2573cf13ed37df5f34e8f";
+in
 buildDotnetModule {
   pname = "Aaru";
   version = "6.0.0-alpha9";
@@ -13,7 +17,7 @@ buildDotnetModule {
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "89ae5e8d8b7aa47ca1e2573cf13ed37df5f34e8f";
+    rev = githash;
     hash = "sha256-cYvkCG7mc30RxHMeNvUvUov8ubtNmR4d6F2UkJmfHx0=";
     fetchSubmodules = true;
     leaveDotGit = false;
@@ -35,12 +39,12 @@ buildDotnetModule {
       "Aaru.Partitions/Aaru.Partitions.csproj" \
       "Aaru.Settings/Aaru.Settings.csproj" \
       "Aaru.Tests.Devices/Aaru.Tests.Devices.csproj" --replace '{chash:8}' \
-      "89ae5e8d"
+      "${substring 0 8 githash}"
   '';
 
   meta = {
     homepage = "https://aaru.app";
-    description = "The Pre-Release of a fully-featured media dump management solution";
+    description = "The Pre-Release version of a fully-featured media dump management solution";
     license = [ lib.licenses.gpl3Only ];
     mainProgram = "aaru";
     maintainers = [ lib.maintainers.whovian9369 ];
