@@ -1,6 +1,6 @@
 # Pre-Release notes
-- `89ae5e8d8b7aa47ca1e2573cf13ed37df5f34e8f` is commit used for $version release tag (on GH)
-- `e10c237ebd879041f49b6f1d58d643a14e901995` is commit used for $version release Windows binary ( via `aaru --version`)
+- `89ae5e8d8b7aa47ca1e2573cf13ed37df5f34e8f` is commit used for `${version}` release tag (on GH)
+- `e10c237ebd879041f49b6f1d58d643a14e901995` is commit used for `${version}` release Windows binary ( via `aaru --version`)
 - Those commits were ~3.5 hrs apart
   - Is `e10c...` the actual build time commit while claunia fixed issues with the build environment, etc? 
   - Maybe `e10c...` was built as a test of the build scripts that Claunia then refined further or something? Not positive...)
