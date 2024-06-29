@@ -35,6 +35,7 @@ buildDotnetModule {
   buildType = "Debug";
   selfContainedBuild = false;
   runtimeId = "linux-x64";
+  executables = [ "aaru" ];
 
   patchPhase = ''
     substituteInPlace \

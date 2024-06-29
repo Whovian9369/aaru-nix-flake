@@ -31,6 +31,7 @@ buildDotnetModule {
   dotnetInstallFlags = [ "--framework net7.0" ];
   selfContainedBuild = false;
   runtimeId = "linux-x64";
+  executables = [ "aaru" ];
 
   patchPhase = ''
     substituteInPlace \
