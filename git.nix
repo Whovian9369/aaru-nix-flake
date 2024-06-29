@@ -7,7 +7,7 @@
 
 let
   inherit (builtins) substring;
-  githash = "4825d414604fe30e23ceabc169be94f1b0dcd781";
+  githash = "ae8d6e385459c0607a137693eca96eb397f89598";
 in
 buildDotnetModule {
   pname = "Aaru";
@@ -17,7 +17,7 @@ buildDotnetModule {
     owner = "aaru-dps";
     repo = "Aaru";
     rev = githash;
-    hash = "sha256-n6MvBgsFLxO/83eLEBzu+/TsRbnXRm+V6h/2CaLY+rk=";
+    hash = "sha256-MkkAEcPdg3Fzz0TLMlKkcvhwe+6ZXvOfdp7ZQogWaho=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
