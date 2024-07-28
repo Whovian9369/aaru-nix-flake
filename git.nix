@@ -3,6 +3,7 @@
   buildDotnetModule,
   dotnetCorePackages,
   fetchFromGitHub,
+  fontconfig
 }:
 
 let
@@ -12,6 +13,7 @@ in
 buildDotnetModule {
   pname = "Aaru";
   version = "6.0.0";
+  # actual version used is "v6.0.0-${substring 0 8 githash}"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
@@ -21,6 +23,8 @@ buildDotnetModule {
     fetchSubmodules = true;
     leaveDotGit = false;
   };
+
+  buildType = "Debug";
 
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
   dotnet-runtime = dotnetCorePackages.runtime_8_0;
@@ -32,10 +36,11 @@ buildDotnetModule {
   dotnetInstallFlags = [
   "--framework net8.0"
   ];
-  buildType = "Debug";
   selfContainedBuild = false;
   runtimeId = "linux-x64";
   executables = [ "aaru" ];
+
+  runtimeDeps = [ fontconfig.lib ];
 
   patchPhase = ''
     substituteInPlace \
