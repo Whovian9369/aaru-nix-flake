@@ -30,12 +30,8 @@ buildDotnetModule {
   dotnet-runtime = dotnetCorePackages.runtime_8_0;
   nugetDeps = ./deps_git.nix;
   projectFile = "Aaru/Aaru.csproj";
-  dotnetBuildFlags = [
-  "--framework net8.0"
-  ];
-  dotnetInstallFlags = [
-  "--framework net8.0"
-  ];
+  dotnetBuildFlags = [ "--framework net8.0" ];
+  dotnetInstallFlags = [ "--framework net8.0" ];
   selfContainedBuild = false;
   runtimeId = "linux-x64";
   executables = [ "aaru" ];
