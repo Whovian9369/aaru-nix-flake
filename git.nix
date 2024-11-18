@@ -8,7 +8,7 @@
 
 let
   inherit (builtins) substring;
-  githash = "ae8d6e385459c0607a137693eca96eb397f89598";
+  githash = "f061e8b804bc2507f9f788ea87d50c44c72fe1b9";
 in
 buildDotnetModule {
   pname = "Aaru";
@@ -19,19 +19,19 @@ buildDotnetModule {
     owner = "aaru-dps";
     repo = "Aaru";
     rev = githash;
-    hash = "sha256-MkkAEcPdg3Fzz0TLMlKkcvhwe+6ZXvOfdp7ZQogWaho=";
+    hash = "sha256-Hc4cQtoK9qlHn6HKyNdqoXcJb0BKSkmGxQzuz2iBzx4=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
 
   buildType = "Debug";
 
-  dotnet-sdk = dotnetCorePackages.sdk_8_0;
-  dotnet-runtime = dotnetCorePackages.runtime_8_0;
+  dotnet-sdk = dotnetCorePackages.sdk_9_0;
+  dotnet-runtime = dotnetCorePackages.runtime_9_0;
   nugetDeps = ./deps_git.nix;
   projectFile = "Aaru/Aaru.csproj";
-  dotnetBuildFlags = [ "--framework net8.0" ];
-  dotnetInstallFlags = [ "--framework net8.0" ];
+  dotnetBuildFlags = [ "--framework net9.0" ];
+  dotnetInstallFlags = [ "--framework net9.0" ];
   selfContainedBuild = false;
   runtimeId = "linux-x64";
   executables = [ "aaru" ];
