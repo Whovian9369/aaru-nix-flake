@@ -6,13 +6,27 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs }:
+    let
+      system = "x86_64-linux";
+      dotnet7-pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+        config.permittedInsecurePackages = [
+          "dotnet-runtime-wrapped-7.0.20"
+          "dotnet-runtime-7.0.20"
+          "dotnet-sdk-wrapped-7.0.410"
+          "dotnet-sdk-7.0.410"
+        ];
+      };
+    in
+  {
     packages = {
       x86_64-linux = {
         default = self.packages.x86_64-linux.prerelease;
         git = nixpkgs.legacyPackages.x86_64-linux.callPackage ./git.nix {};
-        lts = nixpkgs.legacyPackages.x86_64-linux.callPackage ./lts.nix {};
-        prerelease = nixpkgs.legacyPackages.x86_64-linux.callPackage ./prerelease.nix {};
+        lts = dotnet7-pkgs.callPackage ./lts.nix {};
+        prerelease = dotnet7-pkgs.callPackage ./prerelease.nix {};
       };
     };
   };
