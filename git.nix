@@ -8,18 +8,17 @@
 
 let
   inherit (builtins) substring;
-  githash = "f061e8b804bc2507f9f788ea87d50c44c72fe1b9";
 in
-buildDotnetModule {
+buildDotnetModule rec {
   pname = "Aaru";
   version = "6.0.0";
-  # actual version used is "v6.0.0-${substring 0 8 githash}"
+  # actual version used is "v6.0.0-${substring 0 8 src.rev}"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = githash;
-    hash = "sha256-Hc4cQtoK9qlHn6HKyNdqoXcJb0BKSkmGxQzuz2iBzx4=";
+    rev = "5863664dbf626677591c4d5280feb7ec925eed8d";
+    hash = "sha256-MdegPCBd+zqtJ/Uy531C+MFdrUkyYZl3fsHwL6AZPQs=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
@@ -60,7 +59,7 @@ buildDotnetModule {
       "Aaru.Partitions/Aaru.Partitions.csproj" \
       "Aaru.Settings/Aaru.Settings.csproj" \
       "Aaru.Tests.Devices/Aaru.Tests.Devices.csproj" \
-      --replace-fail '{chash:8}' "${substring 0 8 githash}"
+      --replace-fail '{chash:8}' "${substring 0 8 src.rev}"
   '';
   # substituteStream(): WARNING: '--replace' is deprecated, use --replace-{fail,warn,quiet}.
 
