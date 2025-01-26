@@ -1,3 +1,8 @@
-*.log # Debugging logs for testing the Flake
-result # Symlink to `nix build` output
-Notes.md # Notes file
+/result*
+  # Output build symlink
+/fetch-deps*
+  # Symlinks for Dotnet dependency file generation
+*.log
+  # Debugging logs for testing the Flake
+Notes.md
+  # Notes file
