@@ -25,7 +25,7 @@ buildDotnetModule {
 
   dotnet-sdk = dotnetCorePackages.sdk_7_0;
   dotnet-runtime = dotnetCorePackages.runtime_7_0;
-  nugetDeps = ./deps_lts.nix;
+  nugetDeps = ./deps_lts.json;
   projectFile = "Aaru/Aaru.csproj";
   dotnetBuildFlags = [ "--framework net7.0" ];
   dotnetInstallFlags = [ "--framework net7.0" ];

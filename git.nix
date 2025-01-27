@@ -27,7 +27,7 @@ buildDotnetModule rec {
 
   dotnet-sdk = dotnetCorePackages.sdk_9_0;
   dotnet-runtime = dotnetCorePackages.runtime_9_0;
-  nugetDeps = ./deps_git.nix;
+  nugetDeps = ./deps_git.json;
   projectFile = "Aaru/Aaru.csproj";
   dotnetBuildFlags = [ "--framework net9.0" ];
   dotnetInstallFlags = [ "--framework net9.0" ];
