@@ -23,9 +23,11 @@
   {
     packages = {
       x86_64-linux = {
-        default = self.packages.x86_64-linux.prerelease;
-        git = nixpkgs.legacyPackages.x86_64-linux.callPackage ./git.nix {};
-        lts = dotnet7-pkgs.callPackage ./lts.nix {};
+        default = self.packages.${system}.prerelease;
+        git = nixpkgs.legacyPackages.${system}.callPackage ./git.nix {};
+        # lts = dotnet7-pkgs.callPackage ./lts.nix {};
+          # As of 2025-01-26, this build seems to be horribly broken beyond what I am able to fix myself.
+          # If you can, please feel free to open a PR!
         prerelease = dotnet7-pkgs.callPackage ./prerelease.nix {};
       };
     };
