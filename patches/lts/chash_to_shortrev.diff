@@ -1,0 +1,230 @@
+diff --git a/Aaru.Compression/Aaru.Compression.csproj b/Aaru.Compression/Aaru.Compression.csproj
+index 9f4484e36..ec57deb52 100644
+--- a/Aaru.Compression/Aaru.Compression.csproj
++++ b/Aaru.Compression/Aaru.Compression.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <ProjectGuid>{858398D1-7321-4763-8BAB-56BBFEC74E29}</ProjectGuid>
+@@ -31,7 +31,7 @@
+     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Core/Aaru.Core.csproj b/Aaru.Core/Aaru.Core.csproj
+index ed613948a..061bf4dbb 100644
+--- a/Aaru.Core/Aaru.Core.csproj
++++ b/Aaru.Core/Aaru.Core.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -29,7 +29,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+@@ -196,4 +196,4 @@
+     <PackageReference Include="System.Runtime.Handles" Version="4.3.0"/>
+     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0"/>
+   </ItemGroup>
+-</Project>
++</Project>
+\ No newline at end of file
+diff --git a/Aaru.Database/Aaru.Database.csproj b/Aaru.Database/Aaru.Database.csproj
+index 85fbff8a3..05ace6305 100644
+--- a/Aaru.Database/Aaru.Database.csproj
++++ b/Aaru.Database/Aaru.Database.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -28,7 +28,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Devices/Aaru.Devices.csproj b/Aaru.Devices/Aaru.Devices.csproj
+index e99d75bb5..b395592a0 100644
+--- a/Aaru.Devices/Aaru.Devices.csproj
++++ b/Aaru.Devices/Aaru.Devices.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -29,7 +29,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Filesystems/Aaru.Filesystems.csproj b/Aaru.Filesystems/Aaru.Filesystems.csproj
+index a0a43183f..3f5bffe24 100644
+--- a/Aaru.Filesystems/Aaru.Filesystems.csproj
++++ b/Aaru.Filesystems/Aaru.Filesystems.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -30,7 +30,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Filters/Aaru.Filters.csproj b/Aaru.Filters/Aaru.Filters.csproj
+index feff87d5a..8a471998b 100644
+--- a/Aaru.Filters/Aaru.Filters.csproj
++++ b/Aaru.Filters/Aaru.Filters.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -29,7 +29,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Images/Aaru.Images.csproj b/Aaru.Images/Aaru.Images.csproj
+index fc912bad7..152a5c71b 100644
+--- a/Aaru.Images/Aaru.Images.csproj
++++ b/Aaru.Images/Aaru.Images.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -30,7 +30,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+@@ -541,4 +541,4 @@
+       <Link>LICENSE.LGPL</Link>
+     </EmbeddedResource>
+   </ItemGroup>
+-</Project>
++</Project>
+\ No newline at end of file
+diff --git a/Aaru.Partitions/Aaru.Partitions.csproj b/Aaru.Partitions/Aaru.Partitions.csproj
+index 4b2068f79..b12bad293 100644
+--- a/Aaru.Partitions/Aaru.Partitions.csproj
++++ b/Aaru.Partitions/Aaru.Partitions.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -30,7 +30,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Settings/Aaru.Settings.csproj b/Aaru.Settings/Aaru.Settings.csproj
+index ac682490c..1350d4838 100644
+--- a/Aaru.Settings/Aaru.Settings.csproj
++++ b/Aaru.Settings/Aaru.Settings.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -29,7 +29,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj b/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj
+index e1621603a..6b1bcdbeb 100644
+--- a/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj
++++ b/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+@@ -21,7 +21,7 @@
+     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>true</NrtShowRevision>
+   </PropertyGroup>
+diff --git a/Aaru/Aaru.csproj b/Aaru/Aaru.csproj
+index cd8248d31..ee2e6b3cd 100644
+--- a/Aaru/Aaru.csproj
++++ b/Aaru/Aaru.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+@@ -23,7 +23,7 @@
+     <LangVersion>8</LangVersion>
+   </PropertyGroup>
+   <PropertyGroup>
+-    <NrtRevisionFormat>$(Version)+{chash:8}</NrtRevisionFormat>
++    <NrtRevisionFormat>$(Version)+${substring 0 8 src.rev}</NrtRevisionFormat>
+     <NrtResolveSimpleAttributes>true</NrtResolveSimpleAttributes>
+     <NrtShowRevision>false</NrtShowRevision>
+   </PropertyGroup>
+@@ -274,4 +274,4 @@
+     <RpmDotNetDependency Include="libicu" Version="" />
+     <RpmDotNetDependency Include="krb5" Version="" />
+   </ItemGroup>
+-</Project>
++</Project>
+\ No newline at end of file

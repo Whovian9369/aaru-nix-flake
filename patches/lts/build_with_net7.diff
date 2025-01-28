@@ -1,0 +1,250 @@
+diff --git a/Aaru.Compression/Aaru.Compression.csproj b/Aaru.Compression/Aaru.Compression.csproj
+index 9f4484e36..7389da5fb 100644
+--- a/Aaru.Compression/Aaru.Compression.csproj
++++ b/Aaru.Compression/Aaru.Compression.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <ProjectGuid>{858398D1-7321-4763-8BAB-56BBFEC74E29}</ProjectGuid>
+@@ -16,7 +16,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru Data Preservation Suite</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <LangVersion>8</LangVersion>
+     <Description>Compression algorithms used by the Aaru Data Preservation Suite.</Description>
+     <PackageProjectUrl>https://github.com/aaru-dps/</PackageProjectUrl>
+diff --git a/Aaru.Core/Aaru.Core.csproj b/Aaru.Core/Aaru.Core.csproj
+index ed613948a..f1d87cecc 100644
+--- a/Aaru.Core/Aaru.Core.csproj
++++ b/Aaru.Core/Aaru.Core.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Core</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <LangVersion>8</LangVersion>
+     <Description>Contains core algorithms used by the Aaru Data Preservation Suite.</Description>
+     <PackageProjectUrl>https://github.com/aaru-dps/</PackageProjectUrl>
+@@ -196,4 +196,4 @@
+     <PackageReference Include="System.Runtime.Handles" Version="4.3.0"/>
+     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0"/>
+   </ItemGroup>
+-</Project>
++</Project>
+\ No newline at end of file
+diff --git a/Aaru.Database/Aaru.Database.csproj b/Aaru.Database/Aaru.Database.csproj
+index 85fbff8a3..1ab75fd4b 100644
+--- a/Aaru.Database/Aaru.Database.csproj
++++ b/Aaru.Database/Aaru.Database.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -14,7 +14,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Database</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <LangVersion>8</LangVersion>
+     <Description>Database models used by the Aaru Data Preservation Suite.</Description>
+     <PackageProjectUrl>https://github.com/aaru-dps/</PackageProjectUrl>
+diff --git a/Aaru.Devices/Aaru.Devices.csproj b/Aaru.Devices/Aaru.Devices.csproj
+index e99d75bb5..4e371a2c2 100644
+--- a/Aaru.Devices/Aaru.Devices.csproj
++++ b/Aaru.Devices/Aaru.Devices.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Devices</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <LangVersion>8</LangVersion>
+     <Description>Media device hardware interface implementation used by the Aaru Data Preservation Suite.</Description>
+     <PackageProjectUrl>https://github.com/aaru-dps/</PackageProjectUrl>
+diff --git a/Aaru.Filesystems/Aaru.Filesystems.csproj b/Aaru.Filesystems/Aaru.Filesystems.csproj
+index a0a43183f..69e199d9e 100644
+--- a/Aaru.Filesystems/Aaru.Filesystems.csproj
++++ b/Aaru.Filesystems/Aaru.Filesystems.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Filesystems</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <NoWarn>CS0649</NoWarn>
+     <LangVersion>8</LangVersion>
+     <Description>Filesystem implementations used by the Aaru Data Preservation Suite.</Description>
+diff --git a/Aaru.Filters/Aaru.Filters.csproj b/Aaru.Filters/Aaru.Filters.csproj
+index feff87d5a..2fe8396f0 100644
+--- a/Aaru.Filters/Aaru.Filters.csproj
++++ b/Aaru.Filters/Aaru.Filters.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Filters</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <LangVersion>8</LangVersion>
+     <Description>File filters used by the Aaru Data Preservation Suite.</Description>
+     <PackageProjectUrl>https://github.com/aaru-dps/</PackageProjectUrl>
+diff --git a/Aaru.Images/Aaru.Images.csproj b/Aaru.Images/Aaru.Images.csproj
+index fc912bad7..cb6892def 100644
+--- a/Aaru.Images/Aaru.Images.csproj
++++ b/Aaru.Images/Aaru.Images.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.DiscImages</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <NoWarn>CS0649</NoWarn>
+     <LangVersion>8</LangVersion>
+     <Description>Media image formats used by the Aaru Data Preservation Suite.</Description>
+@@ -541,4 +541,4 @@
+       <Link>LICENSE.LGPL</Link>
+     </EmbeddedResource>
+   </ItemGroup>
+-</Project>
++</Project>
+\ No newline at end of file
+diff --git a/Aaru.Partitions/Aaru.Partitions.csproj b/Aaru.Partitions/Aaru.Partitions.csproj
+index 4b2068f79..660e03b92 100644
+--- a/Aaru.Partitions/Aaru.Partitions.csproj
++++ b/Aaru.Partitions/Aaru.Partitions.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Partitions</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <NoWarn>CS0649</NoWarn>
+     <LangVersion>8</LangVersion>
+     <Description>Partitioning schemes implemented by the Aaru Data Preservation Suite.</Description>
+diff --git a/Aaru.Settings/Aaru.Settings.csproj b/Aaru.Settings/Aaru.Settings.csproj
+index ac682490c..73846b935 100644
+--- a/Aaru.Settings/Aaru.Settings.csproj
++++ b/Aaru.Settings/Aaru.Settings.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <SchemaVersion>2.0</SchemaVersion>
+@@ -15,7 +15,7 @@
+     <Product>Aaru Data Preservation Suite</Product>
+     <Title>Aaru.Settings</Title>
+     <ApplicationVersion>$(Version)</ApplicationVersion>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <LangVersion>8</LangVersion>
+     <Description>Settings interface used by the Aaru Data Preservation Suite.</Description>
+     <PackageProjectUrl>https://github.com/aaru-dps/</PackageProjectUrl>
+diff --git a/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj b/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj
+index e1621603a..e6098fee3 100644
+--- a/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj
++++ b/Aaru.Tests.Devices/Aaru.Tests.Devices.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+@@ -9,7 +9,7 @@
+     <AssemblyName>Aaru.Tests.Devices</AssemblyName>
+     <ReleaseVersion>$(Version)</ReleaseVersion>
+     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+     <Version>5.3.2</Version>
+     <Company>Claunia.com</Company>
+diff --git a/Aaru.Tests/Aaru.Tests.csproj b/Aaru.Tests/Aaru.Tests.csproj
+index 0c6228e5d..4f45a9e3a 100644
+--- a/Aaru.Tests/Aaru.Tests.csproj
++++ b/Aaru.Tests/Aaru.Tests.csproj
+@@ -1,7 +1,7 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+ 
+   <PropertyGroup>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+ 
+     <IsPackable>false</IsPackable>
+ 
+@@ -27,4 +27,4 @@
+     <ProjectReference Include="..\Aaru.Images\Aaru.Images.csproj" />
+   </ItemGroup>
+ 
+-</Project>
++</Project>
+\ No newline at end of file
+diff --git a/Aaru/Aaru.csproj b/Aaru/Aaru.csproj
+index cd8248d31..446f76ca7 100644
+--- a/Aaru/Aaru.csproj
++++ b/Aaru/Aaru.csproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+@@ -10,7 +10,7 @@
+     <AssemblyName>aaru</AssemblyName>
+     <ReleaseVersion>$(Version)</ReleaseVersion>
+     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+-    <TargetFramework>netcoreapp3.1</TargetFramework>
++    <TargetFramework>net7.0</TargetFramework>
+     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+     <Version>5.3.2</Version>
+     <Company>Claunia.com</Company>
+@@ -274,4 +274,4 @@
+     <RpmDotNetDependency Include="libicu" Version="" />
+     <RpmDotNetDependency Include="krb5" Version="" />
+   </ItemGroup>
+-</Project>
++</Project>
+\ No newline at end of file
