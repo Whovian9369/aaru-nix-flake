@@ -42,13 +42,19 @@ buildDotnetModule {
     substituteInPlace \
       "Aaru/Aaru.csproj" \
       "Aaru.Archives/Aaru.Archives.csproj" \
+      "Aaru.Checksums/Aaru.Checksums.csproj" \
+      "Aaru.CommonTypes/Aaru.CommonTypes.csproj" \
       "Aaru.Compression/Aaru.Compression.csproj" \
+      "Aaru.Console/Aaru.Console.csproj" \
       "Aaru.Core/Aaru.Core.csproj" \
       "Aaru.Database/Aaru.Database.csproj" \
+      "Aaru.Decoders/Aaru.Decoders.csproj" \
       "Aaru.Devices/Aaru.Devices.csproj" \
+      "Aaru.Dto/Aaru.Dto.csproj" \
       "Aaru.Filesystems/Aaru.Filesystems.csproj" \
       "Aaru.Filters/Aaru.Filters.csproj" \
       "Aaru.Gui/Aaru.Gui.csproj" \
+      "Aaru.Helpers/Aaru.Helpers.csproj" \
       "Aaru.Images/Aaru.Images.csproj" \
       "Aaru.Partitions/Aaru.Partitions.csproj" \
       "Aaru.Settings/Aaru.Settings.csproj" \
