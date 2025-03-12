@@ -1446,11 +1446,6 @@
   },
   {
     "pname": "System.Text.Encoding.CodePages",
-    "version": "4.5.1",
-    "hash": "sha256-PIhkv59IXjyiuefdhKxS9hQfEwO9YWRuNudpo53HQfw="
-  },
-  {
-    "pname": "System.Text.Encoding.CodePages",
     "version": "4.7.1",
     "hash": "sha256-OUA8ttAKGgqD5KUwtnO2OewBF/tJI0nO3YcunK5qMPg="
   },
@@ -1468,11 +1463,6 @@
     "pname": "System.Text.Encoding.Extensions",
     "version": "4.3.0",
     "hash": "sha256-vufHXg8QAKxHlujPHHcrtGwAqFmsCD6HKjfDAiHyAYc="
-  },
-  {
-    "pname": "System.Text.Json",
-    "version": "7.0.3",
-    "hash": "sha256-aSJZ17MjqaZNQkprfxm/09LaCoFtpdWmqU9BTROzWX4="
   },
   {
     "pname": "System.Text.Json",
