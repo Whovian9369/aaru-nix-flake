@@ -37,7 +37,7 @@ buildDotnetModule rec {
 
   runtimeDeps = [ fontconfig.lib ];
 
-  patchPhase = ''
+  postPatch = ''
     substituteInPlace \
       "Aaru/Aaru.csproj" \
       "Aaru.Archives/Aaru.Archives.csproj" \

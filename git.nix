@@ -37,7 +37,7 @@ buildDotnetModule rec {
 
   runtimeDeps = [ fontconfig.lib ];
 
-  patchPhase = ''
+  postPatch = ''
     # Remove global.json to prevent build issues stemming from its existence.
     # We're pinning to an SDK version by using Nix anyway, so it's not super
     # important to worry about Upstream's set version.
