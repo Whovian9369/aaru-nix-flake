@@ -17,8 +17,8 @@ buildDotnetModule rec {
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "56a81aaf1050ea14a20910d2a4e8a8be1917dccc";
-    hash = "sha256-vv+89NpyFqZKjsVKdfvI0cfuAV/ZqT4s/7K/scrjtXI=";
+    rev = "21368f00139e68586008d343e30243aeaf00bb66";
+    hash = "sha256-17gF/0sF5KHIplftdczXWblpQ/huE0Xh/bVinilMGg8=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
@@ -38,6 +38,11 @@ buildDotnetModule rec {
   runtimeDeps = [ fontconfig.lib ];
 
   patchPhase = ''
+    # Remove global.json to prevent build issues stemming from its existence.
+    # We're pinning to an SDK version by using Nix anyway, so it's not super
+    # important to worry about Upstream's set version.
+    rm global.json
+
     substituteInPlace \
       "Aaru/Aaru.csproj" \
       "Aaru.Archives/Aaru.Archives.csproj" \
