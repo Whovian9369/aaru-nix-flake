@@ -8,20 +8,14 @@
 
 buildDotnetModule rec {
   pname = "Aaru";
-  version = "6.0.0-alpha.12";
+  version = "6.0.0-alpha.13";
   # actual version used is "v6.0.0-${substring 0 8 src.rev}"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "3b2cda2e312420038a40bd9a53f9a8334c38ca1b";
-      /*
-        This is technically pinned to the commit after the actual
-        Pre-Release tag on GitHub.
-        This is due to the build erroring, but the developer of Aaru made
-        another commit after the Pre-Release tag fixes that exact issue.
-      */
-    hash = "sha256-onRCFQ0Iw01ZY1KLbK+iXNUZ9p79EWCzQrnW1Mfysho=";
+    rev = "c55a33546eefec3bf22eeeb7a4c038c2a6681a3e";
+    hash = "sha256-Y0imVRxGUPzc3Nh5x1Ann27rtWrDHTdKbLmvvhRxwXc=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };

@@ -14,8 +14,8 @@ buildDotnetModule rec {
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "d5fe51a01e1e31914ef42c642860b7790a61a793";
-    hash = "sha256-/Ea38Y92YrUEjNbNvnaTXGjeIk/AVcz8+XyLYO914ng=";
+    rev = "4bfaa7f54743c77ab24939e723237f9ba52f685d";
+    hash = "sha256-yfTIADRXTgLEg6vHHNqgUmIrFAVnIdys+wFvTvOg6Os=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
