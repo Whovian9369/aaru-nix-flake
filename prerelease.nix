@@ -8,14 +8,14 @@
 
 buildDotnetModule rec {
   pname = "Aaru";
-  version = "6.0.0-alpha.13";
+  version = "6.0.0-alpha.14";
   # actual version used is "v6.0.0-${substring 0 8 src.rev}"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "c55a33546eefec3bf22eeeb7a4c038c2a6681a3e";
-    hash = "sha256-Y0imVRxGUPzc3Nh5x1Ann27rtWrDHTdKbLmvvhRxwXc=";
+    rev = "a2ee0f3bc6dde5ee7db6e7109a57bc81114cdb3b";
+    hash = "sha256-XWI3qPLDhKGYheskkretQXaAO43kcfpieLC6AucRJcY=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };

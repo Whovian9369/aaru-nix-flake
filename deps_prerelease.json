@@ -26,6 +26,11 @@
   },
   {
     "pname": "Avalonia",
+    "version": "11.3.6",
+    "hash": "sha256-dSq6RshqnvbHBPkSvp4rTOgtWmVUPVvaGZadPI2TK9g="
+  },
+  {
+    "pname": "Avalonia",
     "version": "11.3.7",
     "hash": "sha256-FsBz3mwSn+JZvSACEFZGzYBdX+4rFHSFQfl9RYT7BAM="
   },
@@ -138,6 +143,11 @@
     "pname": "ErrorProne.NET.Structs",
     "version": "0.1.2",
     "hash": "sha256-B0kzqe24j0+X96JCtQWXZK3aWfFAYKIYvhrMePMfgPI="
+  },
+  {
+    "pname": "ExCSS",
+    "version": "4.3.1",
+    "hash": "sha256-nNn5+YEaqKSULhtDsImNEyndU/MHna7VpZNUExmo80o="
   },
   {
     "pname": "HarfBuzzSharp",
@@ -765,6 +775,11 @@
     "hash": "sha256-pxz5ef//xOUClwuyflO0eLAfUItFcwfq74Cf0Hj5c1E="
   },
   {
+    "pname": "ShimSkiaSharp",
+    "version": "3.2.1",
+    "hash": "sha256-tWuNa23TYcJBttT2ajQiLowD3toEiIKw0uTqvAQvP58="
+  },
+  {
     "pname": "SkiaSharp",
     "version": "2.88.9",
     "hash": "sha256-jZ/4nVXYJtrz9SBf6sYc/s0FxS7ReIYM4kMkrhZS+24="
@@ -843,6 +858,21 @@
     "pname": "SQLitePCLRaw.provider.e_sqlite3",
     "version": "2.1.11",
     "hash": "sha256-LdfV325AmYgBOwmwP7MNZxMJZkNO6bwrHvB6C5SyItA="
+  },
+  {
+    "pname": "Svg.Controls.Avalonia",
+    "version": "11.3.6.2",
+    "hash": "sha256-VevGjpF6tMh7/Oh9f2gUaW2/Ik48dQ7uRMCwQOJq0rs="
+  },
+  {
+    "pname": "Svg.Custom",
+    "version": "3.2.1",
+    "hash": "sha256-wp0BA9O/TBYbyEktdx//4Qs9J/EdzA4re/xyqBeVJKc="
+  },
+  {
+    "pname": "Svg.Model",
+    "version": "3.2.1",
+    "hash": "sha256-eUK486QLBAv6x+oaoZmwdhwXI+9bEgmWSXMyJczN4Bw="
   },
   {
     "pname": "System.Buffers",
