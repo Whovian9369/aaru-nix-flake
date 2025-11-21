@@ -8,14 +8,14 @@
 
 buildDotnetModule rec {
   pname = "Aaru";
-  version = "6.0.0-alpha.14";
+  version = "6.0.0-alpha.15.1";
   # actual version used is "v6.0.0-${substring 0 8 src.rev}"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "a2ee0f3bc6dde5ee7db6e7109a57bc81114cdb3b";
-    hash = "sha256-XWI3qPLDhKGYheskkretQXaAO43kcfpieLC6AucRJcY=";
+    tag = "v${version}";
+    hash = "sha256-eLwlxZd8rlVpN22NkwN85X8jE2uIh2YGHSajigv9T5Q=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
@@ -68,7 +68,7 @@ buildDotnetModule rec {
       "Aaru.Partitions/Aaru.Partitions.csproj" \
       "Aaru.Settings/Aaru.Settings.csproj" \
       "Aaru.Tests.Devices/Aaru.Tests.Devices.csproj" \
-      --replace-fail '{chash:8}' "${lib.substring 0 8 src.rev}"
+      --replace-fail '{chash:8}' "${lib.substring 7 (-1) src.tag}"
   '';
   # substituteStream(): WARNING: '--replace' is deprecated, use --replace-{fail,warn,quiet}.
 

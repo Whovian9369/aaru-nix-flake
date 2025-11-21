@@ -8,14 +8,14 @@
 
 buildDotnetModule rec {
   pname = "Aaru";
-  version = "6.0.0";
   # actual version used is "v6.0.0-${substring 0 8 src.rev}"
+  version = "6.0.0";
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "a2ee0f3bc6dde5ee7db6e7109a57bc81114cdb3b";
-    hash = "sha256-XWI3qPLDhKGYheskkretQXaAO43kcfpieLC6AucRJcY=";
+    rev = "72163a870c0ca416c4a65fa580ac1a8c8b5a7e66";
+    hash = "sha256-eLwlxZd8rlVpN22NkwN85X8jE2uIh2YGHSajigv9T5Q=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
@@ -35,9 +35,6 @@ buildDotnetModule rec {
   executables = [ "aaru" ];
 
   runtimeDeps = [ fontconfig.lib ];
-
-  patches = [
-  ];
 
   postPatch = ''
     # Remove global.json to prevent build issues stemming from its existence.
@@ -75,9 +72,9 @@ buildDotnetModule rec {
   meta = {
     homepage = "https://aaru.app";
     description = "The Pre-Release version of a fully-featured media dump management solution";
+    # License confirmed via confirmation with claunia, and
+    # https://github.com/aaru-dps/Aaru/blob/f4fef21d0d88b7931b95549782563db4da91a8f8/LICENSE
     license = lib.licenses.gpl3Only;
-      # License confirmed via confirmation with claunia, and
-      # https://github.com/aaru-dps/Aaru/blob/f4fef21d0d88b7931b95549782563db4da91a8f8/LICENSE
     mainProgram = "aaru";
     maintainers = with lib.maintainers; [  ];
   };
