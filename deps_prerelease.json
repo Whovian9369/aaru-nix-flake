@@ -471,8 +471,8 @@
   },
   {
     "pname": "libaaruformat",
-    "version": "1.0.0-alpha.20",
-    "hash": "sha256-QpasFIAoEt0x04zVnAHDzUGZ3T5FzRY4unKYNdNNbqc="
+    "version": "1.0.0-alpha.21",
+    "hash": "sha256-GMICm3cvqi5Nml1lTjYYEobHhyXz6p6dRMiHgLJDnCs="
   },
   {
     "pname": "Macross.Json.Extensions",

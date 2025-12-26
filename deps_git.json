@@ -6,8 +6,8 @@
   },
   {
     "pname": "Aaru.Compression.Native",
-    "version": "6.0.0-alpha.11.4",
-    "hash": "sha256-D49s5QlpurlWy0oCg0zJQzTuNEeLcg27XYz8+A+DGYI="
+    "version": "6.0.0-alpha.12",
+    "hash": "sha256-40Bh6t9SCqSonr+rGpMzx6UjQJ3j68VXusNak5Qsti0="
   },
   {
     "pname": "AsyncFixer",
@@ -471,8 +471,8 @@
   },
   {
     "pname": "libaaruformat",
-    "version": "1.0.0-alpha.20",
-    "hash": "sha256-QpasFIAoEt0x04zVnAHDzUGZ3T5FzRY4unKYNdNNbqc="
+    "version": "1.0.0-alpha.21",
+    "hash": "sha256-GMICm3cvqi5Nml1lTjYYEobHhyXz6p6dRMiHgLJDnCs="
   },
   {
     "pname": "Macross.Json.Extensions",
