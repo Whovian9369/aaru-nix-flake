@@ -3,7 +3,7 @@
   buildDotnetModule,
   dotnetCorePackages,
   fetchFromGitHub,
-  fontconfig
+  fontconfig,
 }:
 
 buildDotnetModule rec {
@@ -16,10 +16,10 @@ buildDotnetModule rec {
     repo = "Aaru";
     tag = "v${version}";
     hash = "sha256-ISWwBL92P6ypx0QAxDxMzi3Qq49ub2N6TW31PErH24A=";
-    fetchSubmodules = true;
-    leaveDotGit = false;
   };
 
+  # Build as "Debug" to give more descriptive error messages,e specially when crashes occur.
+  # This *should* help reporting issues or crashes to upstream.
   buildType = "Debug";
 
   dotnet-sdk = dotnetCorePackages.sdk_10_0;
@@ -70,15 +70,15 @@ buildDotnetModule rec {
       "Aaru.Tests.Devices/Aaru.Tests.Devices.csproj" \
       --replace-fail '{chash:8}' "${lib.substring 7 (-1) src.tag}"
   '';
-  # substituteStream(): WARNING: '--replace' is deprecated, use --replace-{fail,warn,quiet}.
 
   meta = {
     homepage = "https://aaru.app";
-    description = "The Pre-Release version of a fully-featured media dump management solution";
+    description = "Pre-Release version of a fully-featured media dump management solution";
+    # License confirmed via confirmation with claunia, and
+    # https://github.com/aaru-dps/Aaru/blob/f4fef21d0d88b7931b95549782563db4da91a8f8/LICENSE
     license = lib.licenses.gpl3Only;
-      # License confirmed via confirmation with claunia, and
-      # https://github.com/aaru-dps/Aaru/blob/f4fef21d0d88b7931b95549782563db4da91a8f8/LICENSE
     mainProgram = "aaru";
-    maintainers = with lib.maintainers; [  ];
+    maintainers = with lib.maintainers; [ ];
+    platforms = lib.platforms.x86_64;
   };
 }

@@ -19,6 +19,8 @@ buildDotnetModule rec {
     leaveDotGit = false;
   };
 
+  # Build as "Debug" to give more descriptive error messages,e specially when crashes occur.
+  # This *should* help reporting issues or crashes to upstream.
   buildType = "Debug";
 
   dotnet-sdk = dotnetCorePackages.sdk_8_0;
@@ -59,11 +61,11 @@ buildDotnetModule rec {
 
   meta = {
     homepage = "https://aaru.app";
-    description = "The LTS version of a fully-featured media dump management solution";
+    description = "LTS version of a fully-featured media dump management solution";
+    # License confirmed via confirmation with claunia, and
+    # https://github.com/aaru-dps/Aaru/blob/f4fef21d0d88b7931b95549782563db4da91a8f8/LICENSE
     license = lib.licenses.gpl3Only;
-      # License confirmed via confirmation with claunia, and
-      # https://github.com/aaru-dps/Aaru/blob/f4fef21d0d88b7931b95549782563db4da91a8f8/LICENSE
     mainProgram = "aaru";
-    maintainers = with lib.maintainers; [  ];
+    maintainers = with lib.maintainers; [ ];
   };
 }
