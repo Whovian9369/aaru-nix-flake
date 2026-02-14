@@ -6,8 +6,8 @@
   },
   {
     "pname": "Aaru.Compression.Native",
-    "version": "6.0.0-alpha.12",
-    "hash": "sha256-40Bh6t9SCqSonr+rGpMzx6UjQJ3j68VXusNak5Qsti0="
+    "version": "6.0.0-alpha.14",
+    "hash": "sha256-UFIzBJy9ToF+heuU51AYyt/u9uOby2OPtuAFM58hy6Q="
   },
   {
     "pname": "AsyncFixer",

@@ -7,14 +7,14 @@
 
 buildDotnetModule rec {
   pname = "Aaru";
-  version = "5.4.1";
-  # actual version used is "v5.4.1"
+  version = "5.4.2";
+  # actual version used is "v5.4.2"
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "06405f4976e44afcae20b9681ae367454829551a";
-    hash = "sha256-Xbo9/UeKa9E/lp/dbnPsXBapT5v04+cOyGICO//oZfY=";
+    tag = "v${version}";
+    hash = "sha256-F+R45RAPdTdDr2KySOKeeNsS4mizgDNYeA1yuBVf9YA=";
     fetchSubmodules = true;
     leaveDotGit = false;
   };
@@ -56,7 +56,7 @@ buildDotnetModule rec {
       "Aaru.Partitions/Aaru.Partitions.csproj" \
       "Aaru.Settings/Aaru.Settings.csproj" \
       "Aaru.Tests.Devices/Aaru.Tests.Devices.csproj" \
-      --replace-fail '{chash:8}' "${lib.substring 0 8 src.rev}"
+      --replace-fail '{chash:8}' "${lib.substring 0 8 version}"
   '';
 
   meta = {
