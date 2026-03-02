@@ -14,8 +14,8 @@ buildDotnetModule rec {
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "915e99958c250bbd290b5195bff50c1572b29812";
-    hash = "sha256-Pjnn1Oxh99Zfu+s2a3nV9ffkWmFF1UUWFqa33ozrG0I=";
+    rev = "b6dfd7097c60a64ea24406b9f98e3d41bf03878a";
+    hash = "sha256-0qcKHoXKDcE3O7Fvkie103F6YKPwXPvmxbqJsHjn1WA=";
   };
 
   # Build as "Debug" to give more descriptive error messages,e specially when crashes occur.
