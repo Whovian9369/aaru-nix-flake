@@ -9,13 +9,13 @@
 buildDotnetModule rec {
   pname = "Aaru";
   # actual version used is "v6.0.0-${substring 0 8 src.rev}"
-  version = "6.0.0-alpha.17";
+  version = "6.0.0-alpha.19";
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
     tag = "v${version}";
-    hash = "sha256-ISWwBL92P6ypx0QAxDxMzi3Qq49ub2N6TW31PErH24A=";
+    hash = "sha256-wqqD5/Pjrom4b/dgPASnieFgdspep1RagyNP3CS/cKc=";
   };
 
   # Build as "Debug" to give more descriptive error messages,e specially when crashes occur.
