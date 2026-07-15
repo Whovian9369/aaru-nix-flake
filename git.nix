@@ -14,12 +14,10 @@ buildDotnetModule rec {
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "aab5218f66b43d7cc82ba9e6d632821df1a7c091";
-    hash = "sha256-XIh+Jzod8BKqlXQx5/mL6r1cGI4Ed1km6rVKwJmTVqg=";
+    rev = "7c6843691516d545ab39355f24f427690de673d6";
+    hash = "sha256-DBe8QIu51izOaQFcXzoc2VI33vYdEzTG16R/UYaeRMI=";
   };
 
-  # Build as "Debug" to give more descriptive error messages,e specially when crashes occur.
-  # This *should* help reporting issues or crashes to upstream.
   buildType = "Release";
 
   dotnet-sdk = dotnetCorePackages.sdk_10_0;

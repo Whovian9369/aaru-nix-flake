@@ -1,13 +1,13 @@
 [
   {
     "pname": "Aaru.Checksums.Native",
-    "version": "6.0.0-alpha.11",
-    "hash": "sha256-3oO/Ha7K/Dgvm2ojQDQNN/NpN4WrbgAfMcnLQkdmS4o="
+    "version": "6.0.0-beta.1",
+    "hash": "sha256-LSoVtW0YNaowaLacWfJcPWg59yjpV04uE1kfa5p1yxs="
   },
   {
     "pname": "Aaru.Compression.Native",
-    "version": "6.0.0-alpha.21",
-    "hash": "sha256-8VDtVo7BQhxm3Kv5EXW/ngvulBZWusvOpJ/l/PUJOA8="
+    "version": "6.0.0-beta.1",
+    "hash": "sha256-VJyKgivK/w9hk0QDReWm40cdyVh4WCAwGR65CFZ/Y8Y="
   },
   {
     "pname": "AsyncFixer",
@@ -451,8 +451,8 @@
   },
   {
     "pname": "libaaruformat",
-    "version": "1.0.0-alpha.41",
-    "hash": "sha256-Tjs5l7wIDSVbJs7W0l+TcRjnHJc4xvLK7OxDjXWceq4="
+    "version": "1.0.0-beta.1",
+    "hash": "sha256-cwzwM3qexvOI1vi2JAvEo9GV6lfHaD/FCePZ8DXLKmY="
   },
   {
     "pname": "Macross.Json.Extensions",

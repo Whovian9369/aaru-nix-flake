@@ -9,18 +9,16 @@
 buildDotnetModule rec {
   pname = "Aaru";
   # actual version used is "v6.0.0-${substring 0 8 src.rev}"
-  version = "6.0.0-alpha.19";
+  version = "6.0.0-beta.1";
 
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
     tag = "v${version}";
-    hash = "sha256-wqqD5/Pjrom4b/dgPASnieFgdspep1RagyNP3CS/cKc=";
+    hash = "sha256-X4yR1lAQFtm0MOXjlIj2/AuK5hpg0/zGV6uKQEQkoXI=";
   };
 
-  # Build as "Debug" to give more descriptive error messages,e specially when crashes occur.
-  # This *should* help reporting issues or crashes to upstream.
-  buildType = "Debug";
+  buildType = "Release";
 
   dotnet-sdk = dotnetCorePackages.sdk_10_0;
   dotnet-runtime = dotnetCorePackages.runtime_10_0;
@@ -35,9 +33,6 @@ buildDotnetModule rec {
   executables = [ "aaru" ];
 
   runtimeDeps = [ fontconfig.lib ];
-
-  patches = [
-  ];
 
   postPatch = ''
     # Remove global.json to prevent build issues stemming from its existence.
