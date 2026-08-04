@@ -14,8 +14,8 @@ buildDotnetModule rec {
   src = fetchFromGitHub {
     owner = "aaru-dps";
     repo = "Aaru";
-    rev = "7c6843691516d545ab39355f24f427690de673d6";
-    hash = "sha256-DBe8QIu51izOaQFcXzoc2VI33vYdEzTG16R/UYaeRMI=";
+    rev = "0c72846482220587da526cb551fd23443cf327a0";
+    hash = "sha256-+3/Lm6yVgGGTXSs/hnc7jfcfxcqRM5xuDdVU7755JxE=";
   };
 
   buildType = "Release";
